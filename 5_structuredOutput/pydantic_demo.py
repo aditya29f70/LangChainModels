@@ -58,3 +58,5 @@ class Student(BaseModel):
 # print(student)
 
 ## 5. Builting validation
+
+# 45: min
