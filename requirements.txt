@@ -24,3 +24,6 @@ python-dotenv
 # Machine learning Utilites
 numpy 
 scikit-learn 
+
+# for Data validation
+pydantic
