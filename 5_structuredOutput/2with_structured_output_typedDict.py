@@ -26,6 +26,9 @@ class Review(TypedDict):
   name: Annotated[Optional[str], 'Write the name of reviewer']
 
 
+
+#In Python, Annotated is a type helper from the typing module that lets you attach extra metadata to a type.
+
 # now called to with_structured_output() fn on on model with 
 # what would be structure of output 'Review'
 
