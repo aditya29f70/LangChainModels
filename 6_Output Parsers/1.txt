@@ -27,3 +27,73 @@ means it takes output from any llm convert it to string and then return as it is
 why it is useful (in which senario); instead of using result.content why we only convert those whole thing in string
 
 
+Step-by-step process
+sice here we need dynamic prompt so we'll use ''from langchain_core.prompts import PromptTemplate''
+1st write prompt --> detailed report 
+
+2nd prompt --> summary 
+
+
+## now try to use StrOutputParser --> how to use --> common uses -> main uses with ''chains''
+(using chain we convert diff steps into a pipeline in langchain)
+
+first create a parser using '' StrOutputParser()'';; basically we use parser which help use to extract main thing(content) from 
+output of the llm
+-> chain = template1 | model | parser | template | model | parser
+
+
+########### now move to next output parser which ''json'' output parser
+so its force llm to give it's output in json format ;; this the quiest possible way to get
+get json output
+
+now you have understood json out parser ; the main problem with that is -> you can tell llm to give
+json output what you cann't enforce any schema (basically you can't say what would be the structure of your json output)
+that llm will deside itself
+
+# what if we want a structure like fact_1: , fact_2 .... (or in this kind of schema)
+# so you can't do that through jsonOutputParser
+
+that why we study structureOutputParser 
+
+############## structureOuputParser 
+--> is an output parser in langchain that helps extract structure json data from
+llm response based on predefined field schemas.
+
+it works by defining a list of field (response Schema) that the model should return, ensuring the 
+output follows a structure format.
+
+(basically here you can provide a schema so in the basis of that llm will give you the json response)
+note::::::::::: you will get structureOuputParser in langchain.outputparser not in langchain_core
+why bz most useable things are stored in langchain_core(a small ) bz are used a loat
+
+
+# now try to know the desadvantage of that 
+you can do ''' data validation throught that ''' you can only tell that what kind of structure output you want
+(like typedDict)
+
+## so this why we use the 4th one # pydanticOutputParser
+
+################################### pydanticOutputParser
+
+pydanticOutputParser is a structured output parser in Langchain that uses Pydantic models to enforce schema validation when processing LLM responses
+
+why use pydanticOutputParser
+-> Strict Schema enforcement -> ensures that LLM responses follow a well-defined structure.
+-> type safety -> automatically convert LLM ouput into py object 
+-> easy validation -> uses pydantic's build-in validation to catch incorrect or missing data. 
+-> seamless integration -> works well with other langchain components
+
+
+## basically in schema we take a pydantic obj so it will force for data validation things
+
+
+
+
+so finally 
+StrOutputParser --> when we use this we get string output from llm 
+Json --> through that we get json output but schema is not defined
+structure --> you can define schema but validation not possible
+pydantic --> json output , can give schema, and also can validate
+
+
+note there is lot of parser which you can see --> click crl+ left click --> all parser
