@@ -1,0 +1,29 @@
+we will descuss about 4 import output parsers
+
+so what we need this bz we saw that we have two type of model in the basis of --> can we structure it's output ; so we seen that like openai model 
+like we can easily structure there output put some other model we can't (mostly open source model) so here we basically learn how to fine tune these 
+model so we can structure it's ouput --> that is call output parsing
+
+
+Output Parsers --> in LangChain help convert raw LLM response into structure formats like json, csv,
+pydantic models, and more. They ensure consistency, validation, and ease of use in applications.
+
+basically it is written class in langchain which is used to getting the structure response from llm
+(from any kind of llm model)
+
+there are lot of output parsers but we mostly use 4 of them in this class
+1. String output parser
+2. json output parser
+3. structured output parser
+4. pydantic output parser
+
+
+1. StrOutputParser
+-> The StrOutputParser is the simplest output parser in LangChain. It is used to parse the output 
+of a language model (LLM) and return it as a plain string
+
+means it takes output from any llm convert it to string and then return as it is. 
+
+why it is useful (in which senario); instead of using result.content why we only convert those whole thing in string
+
+
