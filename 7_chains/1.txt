@@ -1,0 +1,5 @@
+what and why 
+-> you can make diff kind of pipeline -> sequencial , parallel , conditional chains
+
+# so we will be making these three kind of chains
+1. make a simple sequencial chain
