@@ -28,3 +28,5 @@ scikit-learn
 # for Data validation
 pydantic
 pydantic[email]
+
+grandalf

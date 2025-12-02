@@ -3,3 +3,45 @@ what and why
 
 # so we will be making these three kind of chains
 1. make a simple sequencial chain
+# this will three steps chain
+
+YOu can also visualize you chain (basically we can print our chain --> which steps it is contening)
+chain.get_graph().print_ascci()
+
+now try to make a sequencial chain which has more then one llm model used
+
+topic (user input) --> LLM --> report(tell llm to give a detail report on that topic and got that report) --> LLM --> we get summary
+
+#### now try to create a parallel chain
+
+now here , now try to make a application
+
+you will get a detail infomation about some topic Eg; linear Regression (report about linear-Regression)
+--> we will take this document and try to generate two things 1. generate the note, 2. generate quiz  --> and try to combine both show to user
+
+so user input(a huge large input doc) ==> model1(for note) + model2(for quiz) ==> model3 (merage note + quiz) => final outcome
+
+so we will do it in two first 1. parallel thing one time and and after that meraging(note+quiz) thing one time
+
+so for making parallel chain we need ''''runnable parallel'' in langchain --> rangchain.schema.runnable import RunnableParallel
+
+runaable parallel is kind of runnable help of it we can execute multiple chains
+for using it we have to define a dict where first we have to provide name of each parallel chain and key's value is it's functionality
+
+
+########### now try to understand conditional chains 
+# now we are gonna make a application where we use conditional chain 
+
+so here , user will give feedback for any of our product; ---> we have to find the sentimate of that feedback --> and according we will reply to user (like if the sentimate is positive then we will sent a pos reply ) and lly for -ve reply (like we will try to inhence this and give cutumer support info)
+
+
+so workflow --> feedback --> model (feedback sentimate analysis) --> based one positive and neg feedback we will work forward like if + ve then call that model again to sent a +ve reponse to user , if negative then lly ask some model to tell it sent response accordingly (main things is that only one of them will be executed)
+
+#  now the sentiment analysis work done now we have to work on this branching model
+so for that we need one thing which is from runnable --> RunnableBranch (you can use if else condition to execute a particular model branch)
+-> langchain.schema.runnable import RunnableBranch 
+
+--> here inside that runnableBranch fn we use multiple tuple;; in each tuple use put two things 1. condition, 2. which you want to execute when this condition will true
+--> at the last when not any condition stisfied we use default chain to execute 
+
+
