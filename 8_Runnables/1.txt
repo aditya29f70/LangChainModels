@@ -1,0 +1,11 @@
+behind the seen chains work bz they are made through runnables , you should know what runnable work 
+for chains
+
+## first try to understand --> why it exsist
+so for understanding we will make two type of application
+
+lanchain didn't limited there self, it's also provide such functionality so you can load the text, spliting, embedding
+vector_database
+
+1. simple (user(take topic) -> prompt -> llm(ask that query))
+2. pdf reader

@@ -1,0 +1,17 @@
+LangChain is an open-source framework designed to build applications powered by large language models.
+It provides tools for working with prompts, chaining model calls, managing memory, and integrating external tools.
+
+Retrieval-Augmented Generation (RAG) is a technique where a language model is combined with a document retriever.
+Instead of relying only on model memory, the system retrieves relevant context from a vector database.
+This approach improves accuracy, reduces hallucinations, and allows up-to-date data usage.
+
+Embeddings are numeric vector representations of text. They help computers understand the meaning of sentences.
+Texts with similar meaning have vectors close to each other in vector space.
+
+Some popular free Hugging Face embedding models are:
+1. all-MiniLM-L6-v2 – lightweight and fast
+2. all-mpnet-base-v2 – strong semantic understanding
+3. bge-base-en-v1.5 – great for search and retrieval tasks
+
+Using embeddings + vector database like FAISS or Chroma, developers can create document search systems,
+question-answering chatbots, and knowledge-based assistants.
