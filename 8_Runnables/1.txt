@@ -8,4 +8,32 @@ lanchain didn't limited there self, it's also provide such functionality so you 
 vector_database
 
 1. simple (user(take topic) -> prompt -> llm(ask that query))
+for making work easier langchain build a chain --> LLMChain where only need to give (prompt, llm)
 2. pdf reader
+for making work easier lanchain build a chain according to it's most common step so we don't need to go manually
+chain --> RetrieverQAChain only need to give (llm, retriever)
+
+
+
+they are making the chains but there is a problem 
+--> over time langchain has made lot of chains
+problem they are not made to connect them in the future they are made such like work independently(they have diff funcationally to invoke and do other thing are very diff calling fn)
+--> so runnable in the screen now it make these functionality(llm, splitter, loader, parser, retrieval etc) standardise 
+ so anyone can connect then very easly
+
+
+
+ ###### now try to understand what is runnable
+ -> ''unit of work'' --> each runnable has to do a work
+ -> you can give a input to that runnable --> runnable process that input --> gives output 
+
+# each runnable face a common interface (you will get same set of methods in each runnable)
+eg ''invoke()'' , batch(), stream()
+
+--> you can connect these runnable and you can make any complex workflow with using it
+--> and note;; when you make a workflow with the help of runnable it itself a runnable
+
+
+##### how --> code
+
+
