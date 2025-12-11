@@ -30,3 +30,14 @@ pydantic
 pydantic[email]
 
 grandalf
+
+
+# for document reader
+langchain-community
+sentence-transformers
+faiss-cpu
+langchain-cli
+
+# pip install "langchain==0.1.17"
+# pip install "langchain-community==0.0.36"
+# pip install "langchain-text-splitters==0.0.1"
