@@ -41,3 +41,9 @@ langchain-cli
 # pip install "langchain==0.1.17"
 # pip install "langchain-community==0.0.36"
 # pip install "langchain-text-splitters==0.0.1"
+
+
+# for rag document loader
+# pip install -U langchain-community  
+
+pypdf
