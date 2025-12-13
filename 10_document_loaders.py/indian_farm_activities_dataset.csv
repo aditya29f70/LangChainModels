@@ -1,0 +1,21 @@
+Farmer ID,State,Crop Type,Season,Land Area (Hectares),Farming Technique,Crop Yield (Tonnes/Hectare)
+1,Punjab,Wheat,Rabi,5,Modern,4.2
+2,Maharashtra,Cotton,Kharif,3,Traditional,2.5
+3,Uttar Pradesh,Rice,Kharif,4,Modern,3.8
+4,Rajasthan,Bajra,Rabi,6,Organic,3.0
+5,Andhra Pradesh,Maize,Zaid,2,Traditional,2.1
+6,Tamil Nadu,Groundnut,Rabi,3,Modern,3.5
+7,Karnataka,Sugarcane,Kharif,8,Modern,10.0
+8,Gujarat,Cotton,Kharif,4,Organic,2.7
+9,Bihar,Rice,Rabi,2,Traditional,3.4
+10,Haryana,Wheat,Rabi,7,Modern,4.8
+11,Madhya Pradesh,Soybean,Kharif,5,Modern,3.6
+12,West Bengal,Rice,Rabi,6,Organic,4.1
+13,Odisha,Pulses,Kharif,3,Traditional,1.8
+14,Kerala,Coconut,Zaid,2,Organic,2.3
+15,Assam,Tea,Zaid,10,Modern,5.2
+16,Telangana,Turmeric,Kharif,2,Organic,2.9
+17,Himachal Pradesh,Apple,Rabi,5,Organic,4.5
+18,Jharkhand,Rice,Kharif,3,Modern,3.7
+19,Chhattisgarh,Wheat,Rabi,6,Traditional,3.0
+20,Uttarakhand,Maize,Kharif,4,Traditional,2.4

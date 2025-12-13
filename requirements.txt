@@ -47,3 +47,6 @@ langchain-cli
 # pip install -U langchain-community  
 
 pypdf
+
+# for WebBaseLoader you should have 
+bs4
