@@ -50,3 +50,6 @@ pypdf
 
 # for WebBaseLoader you should have 
 bs4
+
+## for vector store db
+chromadb
