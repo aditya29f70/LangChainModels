@@ -53,3 +53,11 @@ bs4
 
 ## for vector store db
 chromadb
+
+
+
+# for retriever
+# langchain==0.2.14 \
+# langchain-core==0.2.34 \
+# langchain-community==0.2.12 \
+# langchain-huggingface==0.0.3
