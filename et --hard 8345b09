@@ -1,0 +1,40 @@
+[33mfcd4704[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m Rag youtube video traker build
+[33mc8a193e[m Rag youtube video traker build
+[33m8345b09[m[33m ([m[1;31morigin/main[m[33m)[m building a RAG YouTube video Tracker application start
+[33m07f64c7[m Rag theory is is done where i leant about how i rag pipeline works it components like indexing (document loader, text splitter, vector db) kind of External knowledge base for llm , 2. retriever, 3. augmentation, 4. generation;; why rag  bz we had  problems when we have to make llm application and where llm can't answer  1. on person dataset, 2. current data, 3. hallucination;;
+[33mdc1886a[m  RAG start
+[33m2dc6639[m learnt diff type of retriever 1. on the basis of data source 2. on the basis of there searching machanism ; try to understant 1. wikipedia retriever, maximum marginal relavance (MMR) , and multiQuery retriever and finally contextual compressor retriever;; there are lot of good retriever; and also understand why we need retriever
+[33m768c577[m start learning retriever (kind of runnable)
+[33ma353443[m  vector store done leant what is vector store , what is vector db ,what are diff bw them create vector store chroma (which has both fasility vector store as well vector db) added some documents , update a document inside that database , delete a doc etc
+[33mee6f500[m Merge branch 'main' of https://github.com/aditya29f70/LangChainModels
+[33m62aa2ce[m learning about vector store and vector Database
+[33m72f3cf8[m vector database start
+[33mb0d0d95[m  text splitter completed learnt length base splitter(CharactorBaseSplitter), StructuredBaseSplitter(RecursiveCharactorTextSplitter), DocumentTextSplitter (learn how if docs has diff kind of data like code, marder) use of Language, SemanticTextSplitter(not good for not currently in exeperiment phase but in the future will be great)
+[33mff14efa[m  Text structured_based splitting start
+[33md8a5606[m added timestamp
+[33mc32d5a3[m langchain charactor text splitter done
+[33m65368f3[m  langchain text splitting start
+[33mdcfe20e[m langchain Document Loader done learn, TextLoader, PyPdfLoader, DirectoryLoader, WebBaseLoader, csvLoader and we can make our own loader
+[33m55c0de1[m learing PyPDFLoader
+[33m39803d1[m added timestamp
+[33md6dfd7c[m start Rag application's first component Document loader
+[33mccb6085[m langchain runnable is done , learnt RunnableSequence, RunnableParaalle, RunnableLambda, RunnablePassthrough, RunnableBranch primitive runnables
+[33m6f23b2c[m learning premitive runnable like RunnableSequence, RunnableParallel, Runnablepassthrough
+[33mef8eb73[m Merge branch 'main' of https://github.com/aditya29f70/LangChainModels
+[33ma71a089[m lec 9 premitive runnable (sequencial runnable)
+[33maff9517[m some change
+[33m503fe8b[m runnable 1 complete
+[33m9a8b7b6[m runable reading
+[33m3420bea[m runnable ongoing
+[33ma0cabba[m  chain completed learn-> simple chain sequencial chain, parallel chain, conditional chain
+[33mff304fe[m start with simple chain
+[33md1acdd4[m output parser -> strOutputParser, jsonOutputParser, StructureOutputParser, PydanticOutputParser
+[33m4bb6b0e[m output parser
+[33m0c7eec5[m completed structured output typedDict, pydantic and json
+[33mf035986[m  time line
+[33m8c5429e[m add pydantic lib
+[33mf2424b3[m  learnt about structured output -> pydantic
+[33mf55d63e[m learnt about Annotated promt
+[33m6e5851f[m learnt about prompts (static, dynamic(PromptTemplate)) and messages(HumanMessages, systemMessages, AiMessages) and mulitconversionMessage chatPromptTemplate
+[33mc600dd3[m learnt about langchain models and also make query base document classifier
+[33m51d1cd0[m add all the requirement module in requirement.txt file
